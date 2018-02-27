@@ -1,0 +1,78 @@
+ADHD
+    symptoms:
+        daydream a lot
+        forget or lose things a lot
+        squirm or fidget
+        talk too much
+        make careless mistakes or take unnecessary risks
+        have a hard time resisting temptation
+        have trouble taking turns
+        have difficulty getting along with others
+    treatment options:
+        (behavior therapy)
+        (medication)
+        combination of behavior therapy and medication
+Arthritis
+    symptoms:
+        pain and stiffness in or around one or more joints (varies depending on specific form of the disease)
+        Some rheumatic conditions can also involve the immune system and various internal organs of the body.
+    treatments:
+        self-care
+            heating pad
+            physical exercise
+            weight loss
+            tai chi
+            yoga
+            cold compress
+            ice pack
+        therapies
+            hydrotherapy
+            stretching
+            massage
+            acupuncture
+        medications
+            nonsteroidal anti-inflammatory drug
+            steroid
+            analgesic
+            narcotic
+            immunosuppressive drug
+        surgery
+            hip replacement
+Asthma
+Autism Spectrum Disorder (ASD)
+Avian Influenza
+Birth Defects
+Cancer
+Chlamydia
+Chronic Fatigue Syndrome
+Chronic Obstructive Pulmonary Disease (COPD)
+Diabetes
+Ebola (Ebola Virus Disease)
+Epilepsy
+Fetal Alcohol Spectrum Disorders
+Flu (Influenza)
+Genital Herpes (Herpes Simplex Virus)
+Glardiasis
+Gonorrhea
+Heart Disease
+Hepatitis
+HIV/AIDS
+Human Papillomavirus (HPV)
+Kidney Disease (Chronic Kidney Disease)
+Meningitis
+Methicillin-resistant Staphylococcus aureus (MRSA)
+Microcephaly
+Middle East Respiratory Syndrome (MERS)
+Overweight and Obesity
+Parsites - Scabies
+Salmonella
+Sexually Transmitted Diseases (STDs)
+Stroke
+Traumatic Brain Injury (TBI)
+Trichomonas Infection (Trichomoniasis)
+Tuberculosis (TB)
+Water-related Diseases
+Zika Virus
+
+Found at https://www.cdc.gov/diseasesconditions/index.html
+under "Diseases and Conditions" -> "Popular Health Topics"
