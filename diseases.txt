@@ -8,6 +8,9 @@ ADHD
         have a hard time resisting temptation
         have trouble taking turns
         have difficulty getting along with others
+        
+        limited attention
+        hyperactivity
     treatment options:
         (behavior therapy)
         (medication)
@@ -16,6 +19,11 @@ Arthritis
     symptoms:
         pain and stiffness in or around one or more joints (varies depending on specific form of the disease)
         Some rheumatic conditions can also involve the immune system and various internal organs of the body.
+
+        pain
+        swelling
+        reduced range of motion
+        stiffness
     treatments:
         self-care
             heating pad
@@ -76,3 +84,7 @@ Zika Virus
 
 Found at https://www.cdc.gov/diseasesconditions/index.html
 under "Diseases and Conditions" -> "Popular Health Topics"
+
+TODO:
+-maybe eliminate some stuff to make easier to format
+-decide granularity - should we include "people may experience" category under symptoms?
