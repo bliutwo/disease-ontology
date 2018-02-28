@@ -1,6 +1,6 @@
 # Overview:
 
-Disease ontology capturing most common diseases patients have, designed for instructional purposes:
+This is a disease ontology capturing most common diseases patients have, designed for instructional purposes:
 - to better visualize diseases
 - to observe an easy to understand and modify disease ontology
 - less powerful but more understandable

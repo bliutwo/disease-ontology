@@ -47,6 +47,39 @@ Arthritis
         surgery
             hip replacement
 Asthma
+    symptoms
+        difficulty breathing
+        chest pain
+        cough
+            can occur at night
+            during exercise
+            can be chronic
+            dry
+            with phlegm
+            mild
+            severe
+        respiratory
+            difficulty breathing
+            wheezing
+            breathing through the mouth
+            fast breathing
+            frequent respiratory infections
+            rapid breathing
+            shortness of breath at night
+        chest tightness
+        flare
+        anxiety
+        early awakening
+        fast heart rate
+        throat irritation
+    treatment
+        medications
+            bronchodilator
+            steroid
+            anti-inflammatory
+        self-care
+            quitting smoking
+        supportive care
 Autism Spectrum Disorder (ASD)
 Avian Influenza
 Birth Defects
