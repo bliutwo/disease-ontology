@@ -20,7 +20,7 @@ def main():
     # START CODE HERE
 
     api_key = open('/home/bliutwo/Dropbox/.api_key').read()
-    query = 'asthma'
+    query = 'arthritis'
     service_url = 'https://kgsearch.googleapis.com/v1/entities:search'
     params = {
         'query': query,
@@ -31,12 +31,12 @@ def main():
     url = service_url + '?' + urllib.urlencode(params)
     response = json.loads(urllib.urlopen(url).read())
 #    print response
-    for i in response:
-        print i, response[i]
-        print
-    print type(response)
-#    for element in response['itemListElement']:
-#        print element['result']['name'] + ' (' + str(element['resultScore']) + ')'
+#    for i in response:
+#        print i, response[i]
+#        print
+#    print type(response)
+    for element in response['itemListElement']:
+        print element['result']['name'] + ' (' + str(element['resultScore']) + ')'
 
 
     end = time.time()
