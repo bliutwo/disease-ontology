@@ -3,6 +3,10 @@ Run interface.py in Python 2.7.
 ```
 python2 interface.py
 ```
+OR
+```
+Py -2 interface.py
+```
 
 
 # Overview:
