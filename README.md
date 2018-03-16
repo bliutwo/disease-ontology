@@ -1,3 +1,10 @@
+# Usage:
+Run interface.py in Python 2.7.
+```
+python interface.py
+```
+
+
 # Overview:
 
 This is a disease ontology capturing most common diseases patients have, designed for instructional purposes:
