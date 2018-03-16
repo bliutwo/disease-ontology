@@ -17,7 +17,7 @@ This is a disease ontology capturing most common diseases patients have, designe
   - symptoms
   - treatment options
 - [ ] ~~Completely finish research on entire list for a more complete and comprehensive ontology~~
-  - [ ] ~~Instead of manually researching and gathering data about common diseases, write a Python file that searches and parses Google's medical Knowledge Representation to include symptoms and treatment options~~
+- [ ] ~~Instead of manually researching and gathering data about common diseases, write a Python file that searches and parses Google's medical Knowledge Representation to include symptoms and treatment options~~
 
 - [ ] ~~Compile information into OWL-based ontology for clarity~~
 - [ ] Specify how a user is to interact with the system,
