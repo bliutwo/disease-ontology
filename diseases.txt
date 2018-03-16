@@ -133,7 +133,19 @@ Birth Defects (a.k.a congenital disorder or congenital anomaly)
             early intervention programs with a team of therapists and special educators who can treat each child's specific situation
     Cleft lip and cleft palate
         symptoms
-            
+            opening in mouth
+            difficulty speaking
+            difficulty feeding
+            speech disorder
+            stuttering
+            impaired voice
+            physical deformity
+            baby feeding difficulties
+            hearing loss
+            mouth breathing
+            nasal congestion
+            snoring
+
     Spina bifida
     Club foot
     Phenylketonuria
