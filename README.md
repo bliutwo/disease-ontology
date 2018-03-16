@@ -22,7 +22,7 @@ This is a disease ontology capturing most common diseases patients have, designe
 - ~~[ ] Compile information into OWL-based ontology for clarity~~
 - Specify how a user is to interact with the system,
   - [ ]to query for information on different diseases
-  - [x]how to check any symptoms against what exists in ontology
+  - [x] how to check any symptoms against what exists in ontology
 - ~~[ ] Refine ontology such that synonyms can be accounted for (e.g. joint pain vs. pain in joints)~~
 - ~~[ ] Add more subclasses and structure to symptoms and treatment~~
 ## Features:
