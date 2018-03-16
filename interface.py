@@ -34,7 +34,7 @@ def process_disease_file(filename):
             # do nothing to d, because line says symptom
             # add one to counter, should be 2 now
             counter +=1
-        elif line == ';':
+        elif line == 'treatment':
             # do nothing to d, because next line begins treatments
             # add one to counter, should be 3 now
             counter += 1

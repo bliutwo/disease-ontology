@@ -22,7 +22,8 @@ This is a disease ontology capturing most common diseases patients have, designe
 - [ ] Specify how a user is to interact with the system,
   - to query for information on different diseases
   - how to check any symptoms against what exists in ontology
-
+- ~~[ ] Refine ontology such that synonyms can be accounted for (e.g. joint pain vs. pain in joints)~~
+- ~~[ ] Add more subclasses and structure to symptoms and treatment~~
 ## Features:
 - As user gives more info/data to the program, program will ask (differentiating) questions to narrow down a differential diagnosis (the process of differentiating between two or more conditions that share similar signs or symptoms) and present diseases matching these symptoms
 

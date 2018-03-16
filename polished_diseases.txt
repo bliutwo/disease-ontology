@@ -10,7 +10,7 @@ ADHD
         have difficulty getting along with others
         limited attention
         hyperactivity
-        ;
+    treatment
         behavior therapy
         medication
         combination of behavior therapy and medication
@@ -40,7 +40,7 @@ Asthma
         early awakening
         fast heart rate
         throat irritation
-        ;
+    treatment
         bronchodilator
         steroid
         anti-inflammatory
@@ -64,7 +64,7 @@ Autism Spectrum Disorder (ASD)
         hyperactivity
         attention problems
         anxiety and depression
-        ;
+    treatment
         therapy
         social services and programs
         medication
@@ -79,7 +79,7 @@ Avian Influenza
         shortness of breath
         sore throat
         fever
-        ;
+    treatment
         antiviral drug (within two days of symptoms)
 :
 Arthritis
@@ -90,7 +90,7 @@ Arthritis
         swelling
         reduced range of motion
         stiffness
-        ;
+    treatment
         self-care
             heating pad
             physical exercise
@@ -120,7 +120,7 @@ Congenital heart disease
             shortness of breath
             failure to feed or develop normally
             swollen body tissue or organs
-        ;
+        treatment
             medications to lower blood pressure and control heart rate
             heart devices
             catheter procedures
@@ -133,7 +133,7 @@ Congenital heart disease
             intellectual disability
             developmental delays
             may be associated with thyroid or heart disease
-        ;
+        treatment
             early intervention programs with a team of therapists and special educators who can treat each child's specific situation
 :
     Cleft lip and cleft palate
@@ -150,7 +150,7 @@ Congenital heart disease
             mouth breathing
             nasal congestion
             snoring
-            ;
+        treatment
             surgery
             palatoplasty
             orthognathic surgery
@@ -168,7 +168,7 @@ Spina bifida
         skin: birthmark, brown spot on skin, or skin cyst
         urinary: bedwetting, leaking of urine, or urinary tract infection
         also common: hunched back, intellectual disability, nerve injury, paralysis, paralysis of the boy's lower half, or physical deformity
-        ;
+    treatment
         surgery
         spine surgery
         colostomy
@@ -188,7 +188,7 @@ Club foot
         knock knees
         shortened legs
         twisted or upside down appearance of foot
-        ;
+    treatment
         stretching and casting (Ponseti method)
         stretching and taping(French method)
         surgery
@@ -210,42 +210,379 @@ Phenylketonuria
         loss of skin color
         seizures
         urine odor
-        ;
+    treatment
         self-care
         phenylalanine restricted diet
         Aspartame-Restricted diet
         low protein diet
-        
-
+:
 Edwards' syndrome
-Cancer
+    symptoms
+        low birth weight
+        small abnormally shaped head
+        birth defects in organs that are often life threatening
+        absence of one or both testes
+        birth defect with intestinal organs outside of body
+        failure to thrive
+        low birth weight
+        short stature
+        underdeveloped jaw
+        abnormal deviation of fingers
+        clenched hands
+        episodes of no breathing
+        groin hernia
+        kidney defects
+        low-set ears
+        single line on palm
+        underside of foot is convex
+    treatment
+        supportive care
+        palliative care
+        no treatment - usually fatal before birth or within first year of life
+:
+Breast cancer
+    symptoms
+        lump in the breast
+        bloody discharge from the nipple
+        changes in the shape or texture of the nipple or breast
+        breast discomfort
+        inverted nipple
+        breast lumps
+        nipple discharge
+        redness
+        swollen lymph nodes
+    treatment
+        chemotherapy
+        radiation
+        surgery
+        teletherapy
+        radiation therapy
+        mammaplasty
+        tissue expansion
+        lymph node dissection
+        lumpectomy
+        mastectomy
+        estrogen modulator
+        hormone based chemotherapy
+        bone health
+:
+Prostate cancer
+    symptoms
+        no symptoms
+        difficulty with urination
+        difficulty starting and maintaining a steady stream of urine
+        dribbling of urine
+        excessive urination at night
+        frequent urination
+        urge to urinate and leaking
+        urinary retention
+        weak urinary stream
+    treatment
+        supportive care
+            palliative care
+            monitoring for changes or improvement
+        medical procedure
+            brachytherapy
+            radiation therapy
+        surgery
+            laparoscopic radical prostatectomy
+            prostatectomy
+        medications
+            hormone associated therapy
+            bone health
+            chemotherapy
+            urinary retention medication
+:
+Basal cell cancer
+    symptoms
+        white waxy lump
+        brown scaly patch on sun-exposed areas, such as face and neck
+        lesion
+        redness
+        loss of color
+        small bump
+        swollen blood vessels in the skin
+        ulcers
+    treatment
+        prescription creams
+        surgery
+        medications
+            topical anti-tumor medication
+            chemotherapy
+        medical procedure
+            photodynamic therapy
+            tissue scraping
+            Mohs surery
+        surgery
+            electrosurgery
+            wide local excision
+:
+Melanoma
+    symptoms
+        bigger mole diameter
+        darkening of the skin
+        mole color changes
+        skin mole with irregular border
+        new, unusual growth or a change in an existing mole
+    treatment
+        surgery
+            skin grafting and wide local excision
+        radiation
+        medical procedure
+            radiation therapy and Mohs surgery
+        medications
+            chemotherapy
+:
+Colon cancer
+    symptoms
+        changes in bowel habits
+        changes in stool consistency
+        blood in the stool
+        abdominal discomfort or pain
+        constipation
+        narrow stools
+        passing excessive amounts of gas
+        anemia
+        fatigue
+        weight loss
+    treatment
+        surgery
+            lymph node dissection and colectomy
+        Medications
+            chemotherapy and chemotherapy protective drugs
+:
+Lung cancer
+    symptoms
+        cough (often with blood)
+        chest pain
+        wheezing
+        weight loss
+        pain areas: in the chest or rib
+        pain types: can be dull or sharp
+        pain circumstances: can occur while breathing
+        cough
+        chronic cough
+        dry cough
+        cough with phlegm
+        severe cough
+        cough with blood
+        whole body
+            fatigue
+            loss of appetite
+            weakness
+        respiratory
+            frequent respiratory infections
+            shortness of breath
+            wheezing
+        chest discomfort
+        hoarseness
+        swollen lymph nodes
+        weight loss
+    treatment
+        surgery
+            pulmonary lobectomy
+            wedge resection
+            radiosurgery
+            video-assisted thoracoscopic surgery
+        medications
+            chemotherapy
+            targeted therapy
+            immunotherapy
+        medical procedure
+            thoracotomy and radiation therapy
+:
+Leukemia
+    symptoms
+        fatigue
+        weight loss
+        frequent infections
+        easy bleeding or bruising
+        pain in the bones or joints
+        dizziness
+        fever
+        loss of appetite
+        weakness
+        bleeding
+        easy bruising
+        frequent infections
+        mouth ulcer
+        nosebleed
+        pallor
+        red spots on skin
+        shortness of breath
+        swollen lymph nodes
+        unintentional weight loss
+    treatment
+        monitoring
+        chemotherapy
+        radiation
+        hematopoietic stem-cell transplant
+        blood transfusion
+:
+Lymphoma
+    symptoms
+        enlarged lymph nodes
+        fatigue
+        weight loss
+        loss of appetite
+        night sweats
+        shortness of breath
+        swollen lymph nodes
+        weight loss
+    treatment
+        chemotherapy
+        medication
+        radiation therapy
+        stem-cell transplant
+        autotransplantation
+        bone marrow stimulant
+        steroid
+        blood transfusion
+:
 Chlamydia
+    symptoms
+        no symptoms
+        genital pain
+        discharge from the vagina or penis
+        eye pain
+        lower abdomen pain
+        pelvis pain
+        testicle pain
+        vagina pain
+        pain during sexual intercourse
+        pain during urination
+        groin
+            abnormal vaginal discharge
+            discharge from penis
+            vaginal bleeding
+        eye discharge
+        spotting
+    treatment
+        antiobiotic therapy
+        antibiotics
+:
 Chronic Fatigue Syndrome
+    symptoms
+        fatigue for over six months
+        pain in joints
+        pain in muscles
+        muscle pain
+        joint pain
+        whole body
+            fatigue
+            inability to exercise
+            malaise
+        cognitive
+            confusion
+            forgetfulness
+            lack of concentration
+        excess sleepiness or sleep disturbances
+        anxiety
+        apprehension
+        depression
+        headache
+        muscle weakness
+        sensitivity to pain
+        sore throat
+    treatment
+        no cure or approved treatment
+        self-care
+            stress management
+            relaxation techniques
+        therapies
+            support group
+        medications
+            antidepressant
+:
 Chronic Obstructive Pulmonary Disease (COPD)
-Diabetes
-Ebola (Ebola Virus Disease)
-Epilepsy
-Fetal Alcohol Spectrum Disorders
-Flu (Influenza)
-Genital Herpes (Herpes Simplex Virus)
-Glardiasis
-Gonorrhea
-Heart Disease
-Hepatitis
-HIV/AIDS
-Human Papillomavirus (HPV)
-Kidney Disease (Chronic Kidney Disease)
-Meningitis
-Methicillin-resistant Staphylococcus aureus (MRSA)
-Microcephaly
-Middle East Respiratory Syndrome (MERS)
-Overweight and Obesity
-Parsites - Scabies
-Salmonella
-Sexually Transmitted Diseases (STDs)
-Stroke
-Traumatic Brain Injury (TBI)
-Trichomonas Infection (Trichomoniasis)
-Tuberculosis (TB)
-Water-related Diseases
-Zika Virus
+    symptoms
+        shortness of breath
+        wheezing
+        chronic cough
+        dry cough
+        cough with phlegm
+        frequent respiratory infections
+        fatigue
+        inability to exercise
+        chest tightness
+    treatment
+        rescue inhalers
+        inhaled steroids
+        oral steroids
+        bronchodilator
+        steroid
+        self-care
+            physical exercise
+            quitting smoking
+            diaphragmatic breathing
+        supportive care
+            oxygen therapy
+        therapies
+            pulmonary rehabilitation
+:
+Type 2 diabetes
+    symptoms
+        increased thirst
+        frequent urination
+        hunger
+        fatigue
+        blurred vision
+        no symptoms
+        excessive hunger
+        excessive thirst
+        weight gain
+        weight loss
+        poor wound healing
+    treatment
+        diet
+        exercise
+        medication
+        insulin therapy
+        qutting smoking
+        weight loss
+        nutrition counseling
+        diabetic diet
+        dietary fiber
+        anti-diabetic medication
+        blood thinners
+        statin
+        insulin
+:
+Type 1 diabetes
+    symptoms
+        increased thirst
+        frequent urination
+        hunger
+        fatigue
+        blurred vision
+        excessive thirst
+        sweating
+        nausea
+        vomiting
+        bedwetting
+        excessive urination
+        fast heart rate
+        headache
+        sleepiness
+        weight loss
+    treatment
+        regular monitoring
+        insulin therapy
+        diet
+        exercise
+        insulin
+        dietary supplement
+        hormone
+        nutrition counseling
+        carbohydrate counting
+        diabetic diet
+        physical exercise
+:
+Prediabetes
+    symptoms
+        no symptoms
+        excessive hunger
+        excessive thirst
+        fatigue
+        frequent urination
+        weight gain

@@ -182,6 +182,62 @@ Tuberculosis (TB)
 Water-related Diseases
 Zika Virus
 
+
+:
+Gestational diabetes
+:
+Ebola (Ebola Virus Disease)
+:
+Epilepsy
+:
+Fetal Alcohol Spectrum Disorders
+:
+Flu (Influenza)
+:
+Genital Herpes (Herpes Simplex Virus)
+:
+Glardiasis
+:
+Gonorrhea
+:
+Heart Disease
+:
+Hepatitis
+:
+HIV/AIDS
+:
+Human Papillomavirus (HPV)
+:
+Kidney Disease (Chronic Kidney Disease)
+:
+Meningitis
+:
+Methicillin-resistant Staphylococcus aureus (MRSA)
+:
+Microcephaly
+:
+Middle East Respiratory Syndrome (MERS)
+:
+Overweight and Obesity
+:
+Parsites - Scabies
+:
+Salmonella
+:
+Sexually Transmitted Diseases (STDs)
+:
+Stroke
+:
+Traumatic Brain Injury (TBI)
+:
+Trichomonas Infection (Trichomoniasis)
+:
+Tuberculosis (TB)
+:
+Water-related Diseases
+:
+Zika Virus
+
 Found at https://www.cdc.gov/diseasesconditions/index.html
 under "Diseases and Conditions" -> "Popular Health Topics"
 
