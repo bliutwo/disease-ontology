@@ -86,25 +86,33 @@ def main():
     disease_ontology = process_disease_file(filename)
     print disease_ontology
 
+    # TODO: Implement ask questions to narrow down disease
+
+    print "List of symptoms in ontology:"
     print all_symptoms(disease_ontology)
-    assert(False)
+    print
 
     prompt = "Input a list of symptoms separated by a comma (type 'e' to exit): "
     
-    #TODO: get user_input
+    user_input = raw_input(prompt)
 
     while(user_input != 'e'):
-        symptom_list = get_symptoms(user_input)
-        disease_list = get_diseases(user_input)
-        print "Here is a list of possible diseases:"
-        for disease in disease_list:
-            print disease
-        # TODO: get user_input again
+        # symptom_list = get_symptoms(user_input)
+        disease_list = get_diseases(user_input, disease_ontology)
+        if not disease_list:
+            print "No diseases matching these symptoms found in ontology."
+        else:
+            print "Here is a list of possible diseases:"
+            for disease in disease_list:
+                print disease
+        print
+        user_input = raw_input(prompt)
 
     end = time.time()
     sumtime = end - start
+    print
     print "DONE!"
-    print sumtime
+    print "Time to run program: %r seconds" % sumtime
 #    print t
 #    fo = open("results.txt", "wb")
 #    fo.write("%d\n%.8f\n" % (t, sumtime))
