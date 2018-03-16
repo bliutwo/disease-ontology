@@ -90,8 +90,7 @@ def some_symptoms(disease_ontology):
 # # TODO? check if two strings match, but not necessarily exact match
 # or if a is contained in b
 def inexact_match(a, b):
-    if a in b:
-        return True
+    return (a in b) or (b in a)
 
 # symptom, list of symptoms
 # check if symptom in list of symptoms
@@ -132,7 +131,62 @@ def nice_format(do):
 
 # TODO: Based on the list of diseases left, deduce which with questions
 def narrow_down_diseases(disease_list, ontology):
-    pass
+    if len(disease_list) == 1:
+        last_disease = disease_list[0]
+    else:
+        last_disease = "Asthma"
+
+        # get common symptoms
+        common = []
+        not_in_common = {}
+
+        # do first two
+        for symptoma in ontology[disease_list[0]][0]:
+            for symptomb in ontology[disease_list[1]][0]:
+                if inexact_match(symptoma, symptomb):
+                    if symptoma not in common:
+                        common.append(symptoma)
+                    if symptomb not in common:
+                        common.append(symptomb)
+
+        counter = 0 # we've done the first two
+        # compare list to rest of diseases
+        for disease in disease_list:
+            c = []
+            if counter > 1 and counter < len(disease_list):
+                for symptom in common:
+                    for s in ontology[disease_list[counter]][0]:
+                        if inexact_match(symptom, s):
+                            c.append(s)
+                common = c
+                counter += 1
+            counter += 1
+
+
+        # to populate not_in_common, compare common with all symptoms of a disease
+        for disease in disease_list:
+            for symptom in common:
+                for symptoma in ontology[disease][0]:
+                    if not inexact_match(symptom, symptoma):
+                        if disease not in not_in_common:
+                            not_in_common[disease] = []
+                        not_in_common[disease].append(symptoma)
+
+        for disease in disease_list:
+            print disease
+            print ontology[disease][0]
+
+        # ask yes no questions about remaining symptoms not in common
+        print "common:"
+        print common
+        print "not_in_common:"
+        print not_in_common
+        assert(False)
+        for disease in not_in_common:
+            print disease
+            assert(False)
+
+    return last_disease
 
 def main():
     print "Calculating..."
@@ -144,6 +198,7 @@ def main():
     # print disease_ontology
 
     # TODO: Implement ask questions to narrow down disease
+    # TODO: Implement user asks about disease, give symptoms and treatment
 
     print
     print "15 random samples of symptoms in disease ontology:"
@@ -165,7 +220,11 @@ def main():
             print "Here is a list of possible diseases:"
             for disease in disease_list:
                 print disease
-            narrow_down_diseases(disease_list, disease_ontology)
+            last_disease = narrow_down_diseases(disease_list, disease_ontology)
+            print
+            print "Here are some treatment options for %s:" % last_disease
+            for treatment in disease_ontology[last_disease][1]:
+                print treatment
         print
         user_input = raw_input(prompt)
 
