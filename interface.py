@@ -1,5 +1,6 @@
-# Filename: user_interface.py
+# Filename: interface.py
 # Description: Allows the user to input symptoms; outputs possible diseases.
+# TODO: ask questions to narrow down disease
 
 import sys
 sys.dont_write_bytecode = True
@@ -11,11 +12,11 @@ def process_disease_file(filename):
     with open(filename) as f:
         content= f.readlines()
     content = [x.strip() for x in content]
-   
+
     # empty list containing two empty lists
-    lol = []
-    lol.append([])
-    lol.append([])
+    # lol = []
+    # lol.append([])
+    # lol.append([])
  
     counter = 0
     curr_key = ''
@@ -23,7 +24,11 @@ def process_disease_file(filename):
     for line in content:
         if counter == 0:
             curr_key = line
-            d[line] = lol
+            # original: d[curr_key] = lol
+            # can't because pointer to lol
+            d[curr_key] = []
+            d[curr_key].append([])
+            d[curr_key].append([])
             counter += 1
         elif counter == 1:
             # do nothing to d, because line says symptom
@@ -36,21 +41,22 @@ def process_disease_file(filename):
         elif line == ':':
             # end of treatments, the next one will be a disease
             counter = 0
+            curr_key = ''
         elif counter == 2:
             # we are adding symptoms
+            print "curr_key: %s" % curr_key
+            print "Adding symptom: %s" % line
             d[curr_key][0].append(line)
         elif counter == 3:
             # we are adding treatments
+            print "curr_key: %s" % curr_key
+            print "Adding treatment: %s" % line
             d[curr_key][1].append(line)
         else:
             print "Error, should not be able to get here"
             assert(False)
             
     return d
-
-def get_diseases(user_input, disease_ontology):
-    l = []
-    return l
 
 def all_symptoms(disease_ontology):
     string = ""
@@ -76,6 +82,42 @@ def all_symptoms(disease_ontology):
                 
     return string
 
+# # TODO? check if two strings match, but not necessarily exact match
+# or if a is contained in b
+def inexact_match(a, b):
+    if a in b:
+        return True
+
+# symptom, list of symptoms
+# check if symptom in list of symptoms
+def match_found(s, l):
+    for symptom in l:
+        if inexact_match(s, symptom):
+            return True
+    return False
+
+def get_diseases(user_input, disease_ontology):
+    l = []
+
+    symptoms = user_input.split(',')
+
+    for symptom in symptoms:
+        for disease in disease_ontology:
+            if match_found(symptom, disease_ontology[disease][0]):
+                l.append(disease)
+
+    return l
+
+def nice_format(do):
+    for disease in do:
+        print disease
+        print
+        for s in do[disease][0]:
+            print s
+        print
+        for t in do[disease][1]:
+            print t
+        print
 
 def main():
     print "Calculating..."
@@ -85,6 +127,9 @@ def main():
 
     disease_ontology = process_disease_file(filename)
     print disease_ontology
+
+    nice_format(disease_ontology)
+    assert(False)
 
     # TODO: Implement ask questions to narrow down disease
 
