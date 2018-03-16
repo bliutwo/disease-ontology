@@ -1,7 +1,7 @@
 # Usage:
 Run interface.py in Python 2.7.
 ```
-python interface.py
+python2 interface.py
 ```
 
 

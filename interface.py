@@ -6,6 +6,7 @@ import sys
 sys.dont_write_bytecode = True
 
 import time
+from random import shuffle
 
 def process_disease_file(filename):
     d = {}
@@ -54,8 +55,9 @@ def process_disease_file(filename):
             
     return d
 
-def all_symptoms(disease_ontology):
+def some_symptoms(disease_ontology):
     string = ""
+    l = []
 
     diseases = disease_ontology.keys()
 
@@ -64,18 +66,25 @@ def all_symptoms(disease_ontology):
     # calculate limit
     # how i know what the last element of the list is
     # i don't want a comma after that one
-    limit = 0
-    for disease in diseases:
-        for symptom in disease_ontology[disease][0]:
-            limit += 1
+    limit = 15
+    # for disease in diseases:
+    #    for symptom in disease_ontology[disease][0]:
+    #        limit += 1
 
     for disease in diseases:
         for symptom in disease_ontology[disease][0]:
-            string += symptom
+            l.append(symptom)
+    
+    shuffle(l)
+
+    for s in l:
+        string += s
+        if counter != limit:
+            string += ', '
             counter += 1
-            if counter != limit:
-                string += ', '
-                
+        else:
+            break
+
     return string
 
 # # TODO? check if two strings match, but not necessarily exact match
@@ -97,10 +106,16 @@ def get_diseases(user_input, disease_ontology):
 
     symptoms = user_input.split(',')
 
-    for symptom in symptoms:
-        for disease in disease_ontology:
+    for disease in disease_ontology:
+        fits = 0
+        for symptom in symptoms:
             if match_found(symptom, disease_ontology[disease][0]):
-                l.append(disease)
+                fits = 1
+            else:
+                fits = 0
+                break
+        if fits == 1:
+            l.append(disease)
 
     return l
 
@@ -115,6 +130,10 @@ def nice_format(do):
             print t
         print
 
+# TODO: Based on the list of diseases left, deduce which with questions
+def narrow_down_diseases(disease_list, ontology):
+    pass
+
 def main():
     print "Calculating..."
     start = time.time()
@@ -124,13 +143,12 @@ def main():
     disease_ontology = process_disease_file(filename)
     # print disease_ontology
 
-    nice_format(disease_ontology)
-    assert(False)
-
     # TODO: Implement ask questions to narrow down disease
 
-    print "List of symptoms in ontology:"
-    print all_symptoms(disease_ontology)
+    print
+    print "15 random samples of symptoms in disease ontology:"
+    print
+    print some_symptoms(disease_ontology)
     print
 
     prompt = "Input a list of symptoms separated by a comma (type 'e' to exit): "
@@ -140,12 +158,14 @@ def main():
     while(user_input != 'e'):
         # symptom_list = get_symptoms(user_input)
         disease_list = get_diseases(user_input, disease_ontology)
+        print
         if not disease_list:
             print "No diseases matching these symptoms found in ontology."
         else:
             print "Here is a list of possible diseases:"
             for disease in disease_list:
                 print disease
+            narrow_down_diseases(disease_list, disease_ontology)
         print
         user_input = raw_input(prompt)
 
