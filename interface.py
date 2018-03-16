@@ -44,13 +44,9 @@ def process_disease_file(filename):
             curr_key = ''
         elif counter == 2:
             # we are adding symptoms
-            print "curr_key: %s" % curr_key
-            print "Adding symptom: %s" % line
             d[curr_key][0].append(line)
         elif counter == 3:
             # we are adding treatments
-            print "curr_key: %s" % curr_key
-            print "Adding treatment: %s" % line
             d[curr_key][1].append(line)
         else:
             print "Error, should not be able to get here"
@@ -126,7 +122,7 @@ def main():
     filename = "polished_diseases.txt"
 
     disease_ontology = process_disease_file(filename)
-    print disease_ontology
+    # print disease_ontology
 
     nice_format(disease_ontology)
     assert(False)

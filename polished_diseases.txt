@@ -46,3 +46,114 @@ Asthma
         anti-inflammatory
         quitting smoking
         supportive care
+:
+Autism Spectrum Disorder (ASD)
+    symptoms
+        difficulty communicating and interacting with others
+        repetitive behaviors as well as limited interests or activities
+        sister, brother, or other family member with ASD
+        have some ASD behaviors
+        born premature, early, and at a low birth weight
+        symptoms that hurt the individual's ability to function socially, at school or at work, or other areas of life
+        getting upset by a slight change in a routine or being placed in a new or overly stimulating setting
+        making little or inconsistent eye contact
+        having a tendency to look at and listen to other people less often
+        irritability
+        aggression
+        repetitive behavior
+        hyperactivity
+        attention problems
+        anxiety and depression
+        ;
+        therapy
+        social services and programs
+        medication
+:
+Avian Influenza
+    symptoms
+        pain areas: in the muscles
+        whole body: fever or malaise
+        nasal: runny nose or sneezing
+        coughing
+        headache
+        shortness of breath
+        sore throat
+        fever
+        ;
+        antiviral drug (within two days of symptoms)
+:
+Arthritis
+    symptoms
+        pain and stiffness in or around one or more joints (varies depending on specific form of the disease)
+        Some rheumatic conditions can also involve the immune system and various internal organs of the body.
+        pain
+        swelling
+        reduced range of motion
+        stiffness
+        ;
+        self-care
+            heating pad
+            physical exercise
+            weight loss
+            tai chi
+            yoga
+            cold compress
+            ice pack
+        therapies
+            hydrotherapy
+            stretching
+            massage
+            acupuncture
+        medications
+            nonsteroidal anti-inflammatory drug
+            steroid
+            analgesic
+            narcotic
+            immunosuppressive drug
+        surgery
+            hip replacement
+:
+Congenital heart disease
+        symptoms
+            abnormal heart rhythms
+            blue-tinted skin
+            shortness of breath
+            failure to feed or develop normally
+            swollen body tissue or organs
+        ;
+            medications to lower blood pressure and control heart rate
+            heart devices
+            catheter procedures
+            surgery
+            heart transplant
+:
+    Down syndrome
+        symptoms
+            distinct facial appearance
+            intellectual disability
+            developmental delays
+            may be associated with thyroid or heart disease
+        ;
+            early intervention programs with a team of therapists and special educators who can treat each child's specific situation
+:
+    Cleft lip and cleft palate
+        symptoms
+            opening in mouth
+            difficulty speaking
+            difficulty feeding
+            speech disorder
+            stuttering
+            impaired voice
+            physical deformity
+            baby feeding difficulties
+            hearing loss
+            mouth breathing
+            nasal congestion
+            snoring
+            ;
+            surgery
+            palatoplasty
+            orthognathic surgery
+            bone grafting
+            flap surgery
+            dental implant
