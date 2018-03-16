@@ -10,10 +10,11 @@ ADHD
         have difficulty getting along with others
         limited attention
         hyperactivity
-    treatment
+        ;
         behavior therapy
         medication
         combination of behavior therapy and medication
+:
 Asthma
     symptoms
         difficulty breathing
@@ -39,10 +40,9 @@ Asthma
         early awakening
         fast heart rate
         throat irritation
-    treatment
+        ;
         bronchodilator
         steroid
         anti-inflammatory
         quitting smoking
         supportive care
-
