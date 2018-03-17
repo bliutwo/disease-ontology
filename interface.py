@@ -132,9 +132,11 @@ def nice_format(do):
 # TODO: Based on the list of diseases left, deduce which with questions
 def narrow_down_diseases(disease_list, ontology):
     if len(disease_list) == 1:
-        last_disease = disease_list[0]
+        return disease_list[0]
     else:
-        last_disease = "Asthma"
+        print "Here is a list of possible diseases:"
+        for disease in disease_list:
+            print disease
 
         # get common symptoms
         common = []
@@ -149,11 +151,15 @@ def narrow_down_diseases(disease_list, ontology):
                     if symptomb not in common:
                         common.append(symptomb)
 
+
+        #print "First two:"
+        #print common
+
         counter = 0 # we've done the first two
         # compare list to rest of diseases
         for disease in disease_list:
-            c = []
             if counter > 1 and counter < len(disease_list):
+                c = []
                 for symptom in common:
                     for s in ontology[disease_list[counter]][0]:
                         if inexact_match(symptom, s):
@@ -162,31 +168,54 @@ def narrow_down_diseases(disease_list, ontology):
                 counter += 1
             counter += 1
 
-
         # to populate not_in_common, compare common with all symptoms of a disease
         for disease in disease_list:
+            l = ontology[disease][0]
             for symptom in common:
-                for symptoma in ontology[disease][0]:
-                    if not inexact_match(symptom, symptoma):
-                        if disease not in not_in_common:
-                            not_in_common[disease] = []
-                        not_in_common[disease].append(symptoma)
+                if symptom in l:
+                    l.remove(symptom)
+            not_in_common[disease] = l
 
-        for disease in disease_list:
-            print disease
-            print ontology[disease][0]
+#        for disease in disease_list:
+#            print disease
+#            print ontology[disease][0]
 
         # ask yes no questions about remaining symptoms not in common
-        print "common:"
-        print common
-        print "not_in_common:"
-        print not_in_common
-        assert(False)
+        #print "common:"
+        #print common
+        #print "not_in_common:"
+        #print not_in_common
+        #print
         for disease in not_in_common:
-            print disease
-            assert(False)
-
-    return last_disease
+            for symptom in not_in_common[disease]:
+                user_input = raw_input("Is \"%s\" present (y\N):" % symptom)
+                while True:
+                    if user_input == 'y' or user_input == 'Y':
+                        break
+                    elif user_input == 'n' or user_input == 'N':
+                        break
+                    else:
+                        print "Invalid input."
+                        user_input = raw_input("Is \"%s\" present (y\N):" % symptom)
+                if user_input == 'y' or user_input == 'Y':
+                    print "you typed yes"
+                    # recurse on a list with everything that has this symptom
+                    l = []
+                    for disease in disease_list:
+                        for symptoma in ontology[disease][0]:
+                            if inexact_match(symptom, symptoma):
+                                if disease not in l:
+                                    l.append(disease)
+                    #print l
+                    return narrow_down_diseases(l, ontology)
+                else:
+                    print "you typed no"
+                    # remove this disease from the list, recurse on new list
+#                    print disease_list
+                    l = disease_list
+                    l.remove(disease)
+                    #print disease_list
+                    return narrow_down_diseases(l, ontology)
 
 def main():
     print "Calculating..."
@@ -201,38 +230,51 @@ def main():
     # TODO: Implement user asks about disease, give symptoms and treatment
 
     print
-    print "15 random samples of symptoms in disease ontology:"
+
+    print "5 random diseases in the ontology: "
+    l = []
+    for disease in disease_ontology:
+        l.append(disease)
+
+    shuffle(l)
+    print
+    for i in range(0,5):
+        print l[i]
+
+    print
+    print "15 random symptoms in disease ontology:"
     print
     print some_symptoms(disease_ontology)
     print
-
     prompt = "Input a list of symptoms separated by a comma (type 'e' to exit): "
     
     user_input = raw_input(prompt)
 
-    while(user_input != 'e'):
+    if user_input != 'e':
+        print "You typed %s" % user_input 
+        print
         # symptom_list = get_symptoms(user_input)
         disease_list = get_diseases(user_input, disease_ontology)
+        print disease_list
         print
         if not disease_list:
             print "No diseases matching these symptoms found in ontology."
         else:
-            print "Here is a list of possible diseases:"
-            for disease in disease_list:
-                print disease
             last_disease = narrow_down_diseases(disease_list, disease_ontology)
             print
-            print "Here are some treatment options for %s:" % last_disease
+            print "Here are some treatment options for %s:" % last_disease.upper()
             for treatment in disease_ontology[last_disease][1]:
                 print treatment
         print
-        user_input = raw_input(prompt)
+        #print "right before new input"
+        #print disease_list
+        #user_input = raw_input(prompt)
 
     end = time.time()
     sumtime = end - start
     print
-    print "DONE!"
-    print "Time to run program: %r seconds" % sumtime
+    print "Exiting."
+    #print "Time to run program: %r seconds" % sumtime
 #    print t
 #    fo = open("results.txt", "wb")
 #    fo.write("%d\n%.8f\n" % (t, sumtime))

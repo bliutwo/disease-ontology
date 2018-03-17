@@ -586,3 +586,15 @@ Prediabetes
         fatigue
         frequent urination
         weight gain
+    treatment
+        lifestyle changes
+        weight loss
+        medications
+            anti-diabetic medication
+        self-care
+            physical exercise
+            weight loss
+            low carbohydrate diet
+            Mediterranean diet
+            low fat diet
+            diabetic diet
