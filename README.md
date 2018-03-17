@@ -41,29 +41,29 @@ This is a disease ontology capturing most common diseases patients have, designe
 
 ## Diseases in ontology:
 Note that only the following diseases have been added to the ontology so far:
--Spina bifida
--Congenital heart disease
--Club foot
--Type 2 diabetes
--Edwards' syndrome
--Autism Spectrum Disorder (ASD)
--Basal cell cancer
--ADHD
--Melanoma
--Type 1 diabetes
--Breast cancer
--Phenylketonuria
--Chlamydia
--Down syndrome
--Arthritis
--Leukemia
--Colon cancer
--Avian Influenza
--Lymphoma
--Chronic Fatigue Syndrome
--Chronic Obstructive Pulmonary Disease (COPD)
--Cleft lip and cleft palate
--Lung cancer
--Prostate cancer
--Prediabetes
--Asthma
+- Spina bifida
+- Congenital heart disease
+- Club foot
+- Type 2 diabetes
+- Edwards' syndrome
+- Autism Spectrum Disorder (ASD)
+- Basal cell cancer
+- ADHD
+- Melanoma
+- Type 1 diabetes
+- Breast cancer
+- Phenylketonuria
+- Chlamydia
+- Down syndrome
+- Arthritis
+- Leukemia
+- Colon cancer
+- Avian Influenza
+- Lymphoma
+- Chronic Fatigue Syndrome
+- Chronic Obstructive Pulmonary Disease (COPD)
+- Cleft lip and cleft palate
+- Lung cancer
+- Prostate cancer
+- Prediabetes
+- Asthma
