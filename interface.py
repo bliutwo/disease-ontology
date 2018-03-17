@@ -134,6 +134,7 @@ def narrow_down_diseases(disease_list, ontology):
     if len(disease_list) == 1:
         return disease_list[0]
     else:
+        print
         print "Here is a list of possible diseases:"
         for disease in disease_list:
             print disease
@@ -255,7 +256,7 @@ def main():
         print
         # symptom_list = get_symptoms(user_input)
         disease_list = get_diseases(user_input, disease_ontology)
-        print disease_list
+        # print disease_list
         print
         if not disease_list:
             print "No diseases matching these symptoms found in ontology."
